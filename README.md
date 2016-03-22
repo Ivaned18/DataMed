@@ -8,7 +8,7 @@ To use this theme you can fork this repository on GitHub.
 
 ### Bugs and Issues
 
-Have a bug or an issue with this project? [Open a new issue](https://github.com/christianrd/datamed/issues) here on GitHub.
+Have a bug or an issue with this project? [Open a new issue](https://github.com/christianrd/DataMed/issues) here on GitHub.
 
 ### Creators
 
