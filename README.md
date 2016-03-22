@@ -1,5 +1,5 @@
 # DataMed
-==============
+
 DataMed is a Web Application Theme for hospital information about his patients. 
 
 ### Getting Started
