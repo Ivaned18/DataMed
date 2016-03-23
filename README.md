@@ -1,4 +1,5 @@
-# DataMed
+DataMed
+========
 
 DataMed is a Web Application Theme for hospital information about his patients. 
 
@@ -15,8 +16,8 @@ Have a bug or an issue with this project? [Open a new issue](https://github.com/
 
 DataMed theme was created by **Christian D. Rodríguez**, **Wilkin Vásquez** and **Ivan J. Estevez**.
 
-Follow us on:
-=============
+### Follow us:
+
 **Christian D. Rodríguez**
 * https://twitter.com/christiandevcod
 * https://github.com/christianrd
@@ -24,6 +25,4 @@ Follow us on:
 **Wilkin Vásquez**
 * https://github.com/wilkin4
 
-**Ivan J. Estevez**
-
-## Any contribution is welcomed
+### Any contribution is welcomed
