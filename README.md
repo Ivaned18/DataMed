@@ -6,7 +6,7 @@ DataMed is a Web Application Theme for hospital information about his patients.
 ### Getting Started
 
 To use this theme you can fork this repository on GitHub (For some more information on how to fork a repository, [ check out our guide, "Forking Projects"](https://help.github.com/articles/fork-a-repo/).) or download this file from [here](http://christianrd.github.io/DataMed).
-For more information [go to documental](http://christianrd.github.io/DataMed). :sparkling_heart:
+For more information [go to documental](http://christianrd.github.io/DataMed). :mortar_board:
 
 ### Bugs and Issues
 
@@ -20,9 +20,9 @@ DataMed theme was created by **Christian D. Rodríguez**, **Wilkin Vásquez** an
 
 **Christian D. Rodríguez**
 * https://twitter.com/christiandevcod
-* https://github.com/christianrd
+* @christianrd
 
 **Wilkin Vásquez**
-* https://github.com/wilkin4
+* @wilkin4
 
-### Any contribution is welcomed...
+### Any contribution is welcomed... :+1: :sparkling_heart:
