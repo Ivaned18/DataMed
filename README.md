@@ -1,12 +1,12 @@
 DataMed
 ========
 
-DataMed is a Web Application Theme for hospital information about his patients. 
+DataMed is a Web Application for hospital information about his patients. 
 For more details about DataMed [go to DataMed page](http://christianrd.github.io/DataMed). :mortar_board:
 
 ### Getting Started
 
-To use this theme you can fork this repository on GitHub (For some more information on how to fork a repository, [ check out our guide, "Forking Projects"](https://help.github.com/articles/fork-a-repo/).) or download this file from [here](http://christianrd.github.io/DataMed). :mortar_board:
+To use this theme you can fork this repository on GitHub (For some more information on how to fork a repository, [ check out our guide, "Forking Projects"](https://help.github.com/articles/fork-a-repo/).) or download this project from [here](http://christianrd.github.io/DataMed). :mortar_board:
 
 ### Bugs and Issues
 
