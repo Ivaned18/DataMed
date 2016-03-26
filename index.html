@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Dashboard</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="57x57" href="images/logo/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/logo/apple-touch-icon-60x60.png">
@@ -30,23 +30,92 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
-
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body class="container">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- ============ PAGE LOADER START ============ -->
+            <div id="loader">
+                <i class="fa fa-cog fa-4x fa-spin"></i><br><span>Cargando...</span>
+            </div>
+        <!-- ============ PAGE LOADER END ============ -->
 
+        <!-- NAVIGATION
+        ================== -->
+        <header>
+            <nav class="container">
+                <div class="navbar-header">
+                   <!--  <button class="nabvar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> -->
+                    <!-- <a href="#" class="menu-btn nabvar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false"></a> -->
+                    <a href="./" class="navbar-brand">
+                         <img src="images/logo.png" class="logo" alt="DataMed">
+                            <!-- <p>DataMed</p> -->
+                    </a>
+                </div> <!-- .navbar-header -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="./">Dashboard</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="dropdown-main" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i> Christian<span class="caret"></span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-user"></i>&nbsp; Perfil</a></li>
+                                    <li><a href="#"><i class="fa fa-cog"></i>&nbsp; Ajuste</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Salir</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- .navbar-collapse -->
+            </nav>
+        </header>
+        <!-- TITLE & ENROLL -->
+        <section id="title-enroll">
+            <div class="jumbotron">
+                <div class="container-fluid">
+                    
+                </div>
+            </div> <!-- .jumbotron -->
+        </section> <!-- #title-enroll -->
+        <section id="content" class="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 text-center" id="register-patients">
+                        <i class="fa fa-users fa-4x"></i>
+                        <h3 class="content-title">Registro de pacientes</h3>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 text-center" id="register-record">
+                        <i class="fa fa-medkit fa-4x"></i>
+                        <h3 class="content-title">Registro de record médico</h3>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 text-center" id="emergency-register">
+                        <i class="fa fa-ambulance fa-4x"></i>
+                        <h3 class="content-title">Registro de emergencia</h3>
+                    </div>
+                </div> <!-- .row -->
+            </div> <!-- .container -->
+        </section><!-- #content -->
+        <footer>
+            <div class="container-fluid">
+                <p class="text-center">&copy; <script>var fecha = new Date(); document.write(fecha.getFullYear());</script> DataMed. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

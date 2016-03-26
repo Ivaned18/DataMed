@@ -1,22 +1,147 @@
+/*===  GENERAL   ===*/
+*{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
 
+/*===  MENU  ===*/
+header{
+	background-color: #0288d1;
+}
+li > a{
+	color:#fff;
+}
+li > #dropdown-main{
+	border-radius: 5px;
+	border: 2px solid #fff;
+	padding-bottom: 10px;
+}
+.menu-btn {
+  display: block;
+  margin: 1em;
+  width: 36px;
+}
+.logo {
+	width: 60px;
+	height: 60px;
+	margin-top: -20px;
+	/*background-image: url("../images/logo.png");*/
+}
+.menu-btn:before,
+.menu-btn:after {
+  background-color: #cecece;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+.menu-btn:before {
+  box-shadow: 0 10px 0 #cecece;
+  margin-bottom: 16px;
+}
+.menu-btn:hover:before {
+  box-shadow: 0 0 0 #cecece;
+  transform: translateY(10px) rotate(45deg);
+}
+.menu-btn:hover:after{
+  transform: translateY(-10px) rotate(-45deg);
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* === TITLE & ENROLL ===*/
+#title-enroll .jumbotron{
+	background: url("../images/jumbotron-image.jpg") 30% 0 no-repeat;
+	height: 300px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	text-align: center;
+	color: #FFFFFF;
+}
 
+/* === CONTENT === */
+#content{
+	padding-bottom: 30px;
+	text-align: center;
+}
+#emergency-register, #register-record, #register-patients{
+	background-color: #0288d1;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+/*#register-patients:hover{
+	background-color: #fff;
+	border: 1px solid #0288d1;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	-webkit-transition: ease 1s;
+	transition: ease 1s;
+}*/
+.content-title{
+	color: #fff;
+	font-size: 24px;
+	font-size: 2rem;
+}
+.fa-ambulance, .fa-medkit, .fa-users{
+	color: #FFFFFF;
+	padding: 15px 15px 15px 15px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+}
 
+/* === FOOTER === */
+footer{
+	padding: 20px;
+	background: #22313F;
+	color: #fff;
+}
 
+footer a{
+	color: #0288d1;
+}
 
+footer a:hover{
+	color:#90A0E7;
+}
 
+/*  === LOADER == */
+#loader{
+	background:#fff;
+	bottom:0;
+	left:0;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:50000
+}
+#loader i{
+	color:#0288d1;
+	left:50%;
+	margin:-24px 0 0 -24px;
+	position:absolute;
+	top:50%
+} 
+#loader span{
+	left:50%;
+	margin: 35px 0 0 -24px;
+	position:absolute;
+	top:50%;
+	font-size: 16px, font-size: 1.6rem;
+	text-transform: uppercase;
+	 /*font-style: oblique;*/
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* === SCROLLBAR === */
+::-webkit-scrollbar-thumb{
+	background:#0288d1;
+	cursor:pointer;
+	border:1px solid rgba(255,255,255,0.4);
+	border-radius:10px;
+	background-color:rgba(163,217,0,0.82);
+	background-clip:padding-box
+}
+::-webkit-scrollbar-thumb:hover{
+	cursor:pointer
+}
