@@ -3,6 +3,24 @@ $(window).load(function() {
 });
 $(document).ready(function(){
 
+	var contador = 1;
+ 
+	$('.menu-btn').click(function(){
+		// $('nav').toggle(); 
+ 
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+	});
+	 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
    // $('a.page-scroll').bind('click', function(event) {
    //    var $anchor = $(this);
