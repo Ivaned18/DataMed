@@ -1,11 +1,98 @@
 /*===  GENERAL   ===*/
-*{
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
-}
+
 
 /*===  MENU  ===*/
-header{
+.navbar-default {
+  background-color: #0288d1;
+  border-style: none;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+.navbar-default .navbar-header .navbar-brand {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  border-style: none;
+}
+.navbar-default .navbar-header .navbar-toggle .icon-bar {
+  background-color: white;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+.navbar-default .navbar-header .navbar-toggle:focus, .navbar-default .navbar-header .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-header .navbar-toggle:focus .icon-bar, .navbar-default .navbar-header .navbar-toggle:hover .icon-bar {
+  background-color: #dad41d;
+}
+.navbar-default .navbar-collapse {
+  border-style: none;
+}
+.navbar-default .nav > li > a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
+  color: #DCE4E9;
+}
+li > #dropdown-main{
+	border-radius: 5px;
+	border: 2px solid #fff;
+	padding-bottom: 10px;
+}
+.navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus, .navbar-default .nav > li.active > a:hover {
+  background-color: transparent;
+  color: #DCE4E9;
+}
+@media (min-width: 768px) and (min-height: 590px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 18px 0;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    font-size: 22px;
+    padding: 14px 15px 16px;
+  }
+  .navbar-default.affix {
+    background-color: #01928d;
+    padding: 0;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    font-size: 18px;
+    padding: 15px 15px;
+  }
+  .menu-btn {
+  display: block;
+  float: right;
+  margin: 1em;
+  width: 36px;
+}
+.menu-btn:before,
+.menu-btn:after {
+  background-color: #fff;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+.menu-btn:before {
+  box-shadow: 0 10px 0 #fff;
+  margin-bottom: 16px;
+}
+.menu-btn:hover:before {
+  box-shadow: 0 0 0 #fff;
+  transform: translateY(10px) rotate(45deg);
+}
+.menu-btn:hover:after{
+  transform: translateY(-10px) rotate(-45deg);
+}
+}
+/*nav{
 	background-color: #0288d1;
 }
 li > a{
@@ -15,52 +102,72 @@ li > #dropdown-main{
 	border-radius: 5px;
 	border: 2px solid #fff;
 	padding-bottom: 10px;
-}
-.menu-btn {
-  display: block;
-  margin: 1em;
-  width: 36px;
-}
+}*/
 .logo {
-	width: 60px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 	margin-top: -20px;
 	/*background-image: url("../images/logo.png");*/
 }
-.menu-btn:before,
-.menu-btn:after {
-  background-color: #cecece;
-  content: '';
-  display: block;
-  height: 4px;
-  transition: all 200ms ease-in-out;
+
+
+/* ------------------------------
+
+   Intro 
+ 
+--------------------------------- */
+header {
+  background-image: url("../images/imagen1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.menu-btn:before {
-  box-shadow: 0 10px 0 #cecece;
-  margin-bottom: 16px;
+header .intro-inner {
+  background-color: rgba(11, 11, 11, 0.3);
+  padding: 120px 0;
 }
-.menu-btn:hover:before {
-  box-shadow: 0 0 0 #cecece;
-  transform: translateY(10px) rotate(45deg);
+header .intro-heading,
+header .intro-lead-in {
+  color: white;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
-.menu-btn:hover:after{
-  transform: translateY(-10px) rotate(-45deg);
+header .intro-heading {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+header .intro-lead-in {
+  font-size: 28px;
+}
+@media (min-width: 768px) and (min-height: 590px) {
+	
+  header .intro-inner {
+    padding: 220px 0 170px;
+  }
+  header .intro-heading {
+    font-size: 68px;
+  }
+  header .intro-lead-in {
+    font-size: 38px;
+  }
 }
 
 /* === TITLE & ENROLL ===*/
-#title-enroll .jumbotron{
+/*#title-enroll .jumbotron{
 	background: url("../images/jumbotron-image.jpg") 30% 0 no-repeat;
 	height: 300px;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
 	text-align: center;
 	color: #FFFFFF;
-}
+}*/
 
 /* === CONTENT === */
 #content{
 	padding-bottom: 30px;
 	text-align: center;
+	margin-top: 50px;
 }
 #emergency-register, #register-record, #register-patients{
 	background-color: #0288d1;
@@ -124,7 +231,7 @@ footer a:hover{
 	top:50%
 } 
 #loader span{
-	left:50%;
+	left:49%;
 	margin: 35px 0 0 -24px;
 	position:absolute;
 	top:50%;
