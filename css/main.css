@@ -1,5 +1,10 @@
 /*===  GENERAL   ===*/
-
+#all-container{
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+    height: 100%; /* Or whatever you want (eg. 400px) */
+}
 
 /*===  MENU  ===*/
 .navbar-default {
@@ -44,6 +49,14 @@ li > #dropdown-main{
 	border-radius: 5px;
 	border: 2px solid #fff;
 	padding-bottom: 10px;
+	-webkit-transition: all .8s;
+	-moz-transition: all .8s;
+	transition: all .8s;
+}
+li > #dropdown-main:hover, 
+li > #dropdown-main:focus{
+	background-color: #fff;
+	color: #000;
 }
 .navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus, .navbar-default .nav > li.active > a:hover {
   background-color: transparent;
@@ -92,13 +105,13 @@ li > #dropdown-main{
 	  box-shadow: 0 10px 0 #fff;
 	  margin-bottom: 16px;
 	}
-	/*.menu-btn:focus:before {
+	.menu-btn-focus:before {
 	  box-shadow: 0 0 0 #fff;
 	  transform: translateY(10px) rotate(45deg);
 	}
-	/*.menu-btn:focus:after{
+	.menu-btn-focus:after{
 	  transform: translateY(-10px) rotate(-45deg);
-	}*/
+	}
 }
 /*nav{
 	background-color: #0288d1;
@@ -183,20 +196,23 @@ header .intro-lead-in {
 	padding-top: 15px;
 	padding-bottom: 5px;
 	border-radius: 5px;
-	-webkit-transition-timing-function: ease;
-	transition-timing-function: ease;
+	-webkit-transition: all .5s;
+	-moz-transition:all .5s;
+	transition: all .5s;
 }
 .registers:hover{
 	background-color: #fff;
-	border: 2px solid;
+	border: 2px solid #0288d1;
 	border-radius: 5px;
+	cursor:pointer;
 }
-.registers:hover, .content-title:hover, .fa-reg:hover{
+.hov:hover .content-title{
+	color: #0288d1;
+}
+
+.hov:hover .fa-reg{
 	color: #0288d1;
 	border-color: #0288d1;
-	-webkit-transition: all .3s;
-	-moz-transition:all .3s;
-	transition: all .3s;
 }
 
 .content-title{
@@ -254,7 +270,7 @@ footer a:hover{
 }
 
 /* === SCROLLBAR === */
-::-webkit-scrollbar-thumb{
+/*::-webkit-scrollbar-thumb{
 	background:#0288d1;
 	cursor:pointer;
 	border:1px solid rgba(255,255,255,0.4);
@@ -264,4 +280,21 @@ footer a:hover{
 }
 ::-webkit-scrollbar-thumb:hover{
 	cursor:pointer
+}
+*/
+
+::-webkit-scrollbar{
+    width: 8px;
+    background: rgba(221,221,221,0.2);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #444;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(2,136,209,0.8);
+    cursor: pointer;
 }

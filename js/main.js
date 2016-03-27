@@ -47,4 +47,12 @@ $(document).ready(function(){
          top: 100
       }
    });
+
+   /*var container = document.getElementById('all-container');
+    Ps.update(container);
+    Ps.initialize(container, {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });*/
 });

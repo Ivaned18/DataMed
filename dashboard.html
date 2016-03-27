@@ -33,9 +33,9 @@
         <!-- STYLESHEET -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/perfect-scrollbar.css"> -->
         <link rel="stylesheet" type="text/css" href="css/menu_elastic.css" />
         <link rel="stylesheet" href="css/main.css">
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
@@ -44,12 +44,13 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <!-- <div id="all-container"> -->
         <!-- ============ PAGE LOADER START ============ -->
             <div id="loader">
                 <i class="fa fa-cog fa-4x fa-spin"></i><br><span>Cargando...</span>
             </div>
         <!-- ============ PAGE LOADER END ============ -->
-
+    
         <!-- ============ RESPONSIVE MENU ============ -->
             <div class="menu-wrap">
                 <nav class="menu">
@@ -78,7 +79,6 @@
                 <div class="container">
                     <div class="navbar-header">
                         <a href="#" class="menu-btn" id="open-button"></a>
-                        <!-- <button class="menu-button" id="open-button">Open Menu</button> -->
                         <a href="./" class="navbar-brand">
                              <!-- <img src="images/logo.png" class="logo" alt="DataMed"> -->
                                 <!-- <p>DataMed</p> -->
@@ -97,12 +97,13 @@
                                         <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Salir</a></li>
                                     </ul>
                                 </a>
-                            </li>
-                        </ul>
+                            </li> <!-- .dropdown -->
+                        </ul> <!-- .navbar-right -->
                     </div> <!-- .navbar-collapse -->
-                </div>
+                </div> <!-- .container -->
             </nav>
-
+            
+            <!-- ============ TITLE AND ROLL ============ -->
              <header>
               <div class="intro-inner">
                  <div class="container">
@@ -117,43 +118,44 @@
                           <!-- <a href="#" class="btn btn-default btn-xl">Know more</a> -->
                        </div>
                     </div>
-                 </div>
-              </div>
+                 </div> <!-- .container -->
+              </div> <!-- .intro-inner -->
            </header>
-
-            <!-- <div class="content"> -->
-                <section id="content" class="wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-4 text-center">
-                                <div class="registers">
-                                    <i class="fa fa-users fa-4x fa-reg"></i>
-                                    <h3 class="content-title">Registro de pacientes</h3>
-                                </div>
+                
+            <!-- ============ CONTENT SECTION ============ -->
+            <section id="content" class="wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 text-center">
+                            <div class="registers hov">
+                                <i class="fa fa-users fa-4x fa-reg"></i>
+                                <h3 class="content-title">Registro de pacientes</h3>
                             </div>
-                            <div class="col-sm-3 col-md-4 text-center">
-                                <div class="registers">
-                                    <i class="fa fa-medkit fa-4x fa-reg"></i>
-                                    <h3 class="content-title">Registro de record médico</h3>
-                                </div>
+                        </div>
+                        <div class="col-sm-3 col-md-4 text-center">
+                            <div class="registers hov">
+                                <i class="fa fa-medkit fa-4x fa-reg"></i>
+                                <h3 class="content-title">Registro de record médico</h3>
                             </div>
-                            <div class="col-sm-3 col-md-4 text-center">
-                                <div class="registers">
-                                    <i class="fa fa-ambulance fa-4x fa-reg"></i>
-                                    <h3 class="content-title">Registro de emergencia</h3>
-                                </div>
+                        </div>
+                        <div class="col-sm-3 col-md-4 text-center">
+                            <div class="registers hov">
+                                <i class="fa fa-ambulance fa-4x fa-reg"></i>
+                                <h3 class="content-title">Registro de emergencia</h3>
                             </div>
-                        </div> <!-- .row -->
-                    </div> <!-- .container -->
-                </section><!-- #content -->
+                        </div>
+                    </div> <!-- .row -->
+                </div> <!-- .container -->
+            </section><!-- #content -->
             <!-- </div> -->
-        </div>
+        
+        </div><!-- .content-wrap -->
         <footer>
             <div class="container-fluid">
                 <p class="text-center">&copy; <script>var fecha = new Date(); document.write(fecha.getFullYear());</script> DataMed. Todos los derechos reservados.</p>
             </div>
         </footer>
-        
+    <!-- </div>  -->
         <!-- =========== JAVASCRIPTS =========== -->
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -161,16 +163,17 @@
         <script src="js/vendor/snap.svg-min.js"></script>
         <script src="js/vendor/main3.js"></script>
         <script src="js/vendor/jquery.easing.min.js"></script>
+        <!-- <script src="js/vendor/perfect-scrollbar.min.js"></script> -->
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            /*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');*/
         </script>
     </body>
 </html>
