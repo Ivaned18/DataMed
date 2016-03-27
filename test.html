@@ -1,59 +1,169 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>Titon Toolkit</title>
-        <link href="css/toolkit.min.css" rel="stylesheet">
-        <!-- <link href="css/style.min.cs" rel="stylesheet"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/logo/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/logo/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/logo/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/logo/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/logo/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/logo/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/logo/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/logo/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="images/logo/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="images/logo/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="images/logo/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="images/logo/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="images/logo/manifest.json">
+        <link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="DataMed">
+        <meta name="application-name" content="DataMed">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/menu_elastic.css" />
+        <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/jquery-2.2.2.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
     </head>
     <body>
-<div class="canvas" data-offcanvas>
-    <main class="on-canvas" role="main" data-offcanvas-content>
-        <h3>Section 1</h3>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- ============ PAGE LOADER START ============ -->
+            <div id="loader">
+                <i class="fa fa-cog fa-4x fa-spin"></i><br><span>Cargando...</span>
+            </div>
+        <!-- ============ PAGE LOADER END ============ -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus quam, viverra a cursus non, eleifend id lacus. Vestibulum mattis felis non purus tempus viverra. In blandit fermentum lacus, nec feugiat neque egestas at. Vestibulum ut lacinia enim. Fusce vitae pharetra urna. Sed interdum massa lectus, in pharetra diam dapibus ac. Suspendisse sit amet turpis et neque lacinia vehicula rhoncus non mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vestibulum varius ligula id venenatis. Maecenas ac auctor libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+        <!-- ============ RESPONSIVE MENU ============ -->
+            <div class="menu-wrap">
+                <nav class="menu">
+                    <div class="icon-list">
+                        <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Inicio</span></a>
+                        <a href="#"><i class="fa fa-fw fa-user"></i><span>Perfil</span></a>
+                        <a href="#"><i class="fa fa-fw fa-cog"></i><span>Ajuste</span></a>
+                        <!-- <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a> -->
+                        <!-- <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a> -->
+                        <a href="#"><i class="fa fa-fw fa-sign-out"></i><span>Salir</span></a>
+                    </div>
+                </nav>
+                <button class="close-button" id="close-button">Close Menu</button>
+                <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                        <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- ============ END RESPONSIVE MENU ============ -->
 
-        <p>Proin dapibus mauris sed nulla ullamcorper, in pellentesque purus dignissim. Fusce nec nisl elit. Maecenas sit amet tellus iaculis lorem porta hendrerit. Donec nec iaculis metus. Suspendisse placerat augue vel eleifend pretium. Vivamus cursus nisi non ipsum tempus vehicula. Curabitur id blandit augue. </p>
+        <!-- NAVIGATION
+        ================== -->
+        <div class="content-wrap">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" class="menu-btn" id="open-button"></a>
+                        <!-- <button class="menu-button" id="open-button">Open Menu</button> -->
+                        <a href="./" class="navbar-brand">
+                             <!-- <img src="images/logo.png" class="logo" alt="DataMed"> -->
+                                <!-- <p>DataMed</p> -->
+                        </a>
+                    </div> <!-- .navbar-header -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- <li>
+                                <a href="./">Dashboard</a>
+                            </li> -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" id="dropdown-main" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i> Christian<span class="caret"></span>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-user"></i>&nbsp; Perfil</a></li>
+                                        <li><a href="#"><i class="fa fa-cog"></i>&nbsp; Ajuste</a></li>
+                                        <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Salir</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- .navbar-collapse -->
+                </div>
+            </nav>
 
-        <p>Proin sit amet ipsum suscipit lectus eleifend blandit interdum eget diam. Praesent non ex a ex ultrices bibendum sit amet ac ante. Sed egestas euismod ornare. Nulla facilisi. Mauris placerat mauris eu nulla dignissim laoreet nec ac velit. Pellentesque sit amet libero et nisi iaculis iaculis eget a velit. Donec rutrum, risus eget consectetur tristique, tortor ligula ullamcorper leo, sed imperdiet nibh ligula eu magna. Quisque ut feugiat libero. </p>
+             <header>
+              <div class="intro-inner">
+                 <div class="container">
+                    <div class="row text-center">
+                       <div class="col-md-12">
+                          <!-- <div class="intro-lead-in">Welcome to My Folio</div> -->
+                          <!-- <div class="intro-heading">Lorem Ipsum Dolor</div> -->
+                       </div>
+                    </div>
+                    <div class="row text-center">
+                       <div class="col-md-12">
+                          <!-- <a href="#" class="btn btn-default btn-xl">Know more</a> -->
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </header>
 
-        <div class="divider"></div>
+            <!-- <div class="content"> -->
+                <section id="content" class="wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 text-center" id="register-patients">
+                                <i class="fa fa-users fa-4x"></i>
+                                <h3 class="content-title">Registro de pacientes</h3>
+                            </div>
+                            <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 text-center" id="register-record">
+                                <i class="fa fa-medkit fa-4x"></i>
+                                <h3 class="content-title">Registro de record médico</h3>
+                            </div>
+                            <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 text-center" id="emergency-register">
+                                <i class="fa fa-ambulance fa-4x"></i>
+                                <h3 class="content-title">Registro de emergencia</h3>
+                            </div>
+                        </div> <!-- .row -->
+                    </div> <!-- .container -->
+                </section><!-- #content -->
+            <!-- </div> -->
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <p class="text-center">&copy; <script>var fecha = new Date(); document.write(fecha.getFullYear());</script> DataMed. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/classie.js"></script>
+        <script src="js/vendor/snap.svg-min.js"></script>
+        <script src="js/vendor/main3.js"></script>
+        <script src="js/vendor/jquery.easing.min.js"></script>
+        <script src="js/main.js"></script>
 
-        <h3>Section 2</h3>
-
-        <p>Aenean quis eleifend dolor, a maximus justo. Duis nulla quam, congue eu pharetra at, porta a est. Quisque hendrerit, sapien eget fermentum efficitur, enim massa ultrices purus, viverra sodales metus mi vitae purus. Proin elit ipsum, blandit a lacus eu, tristique accumsan ligula. Aenean id purus ac tortor rhoncus efficitur. Praesent vitae volutpat justo. Phasellus dignissim erat vitae nibh mattis, a posuere erat fermentum. Phasellus ipsum urna, consectetur vel urna vel, dictum volutpat nunc. Donec scelerisque sed erat sed posuere. Nulla a porttitor nisl. In posuere egestas tellus ac dictum. In hac habitasse platea dictumst. Ut erat ex, consectetur a ante et, volutpat congue tellus. Morbi consectetur tellus lacus, at tincidunt quam pellentesque vitae. </p>
-
-        <div class="divider"></div>
-
-        <h3>Section 3</h3>
-
-        <p>Nulla consequat eu urna ut ultrices. Aliquam molestie turpis at justo vehicula semper. Fusce semper eros ac ligula facilisis vulputate. Sed turpis est, aliquam vitae varius nec, ultrices in ante. Nunc ac porttitor diam. Sed eget nulla in metus pretium fermentum. Proin sed porttitor sem. Donec mattis turpis justo, vel laoreet odio maximus sit amet. Donec iaculis laoreet enim id tincidunt. Donec sit amet volutpat leo. Ut eros magna, laoreet nec dignissim quis, dictum vitae lectus. Sed id ligula sed nulla facilisis auctor a sed tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ornare dolor ante, eget fermentum leo porta ut. </p>
-
-        <p>Proin sit amet ipsum suscipit lectus eleifend blandit interdum eget diam. Praesent non ex a ex ultrices bibendum sit amet ac ante. Sed egestas euismod ornare. Nulla facilisi. Mauris placerat mauris eu nulla dignissim laoreet nec ac velit. Pellentesque sit amet libero et nisi iaculis iaculis eget a velit. Donec rutrum, risus eget consectetur tristique, tortor ligula ullamcorper leo, sed imperdiet nibh ligula eu magna. Quisque ut feugiat libero. </p>
-    </main>
-
-    <aside class="off-canvas off-canvas--left" role="complementary" data-offcanvas-sidebar="left">
-        <h3>Menu</h3>
-
-        <ul>
-            <li><a href="">First Item</a></li>
-            <li><a href="">Second Item</a></li>
-            <li><a href="">Third Item</a></li>
-        </ul>
-    </aside>
-</div>
-
-        <!-- JS -->
-        <script src="js/toolkit.min.js"></script>
-        <script src="js/off-canvas.js"></script>
-		<script>
-		    $(function() {
-		        $('.off-canvas').offCanvas();
-		    });
-		</script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
     </body>
 </html>

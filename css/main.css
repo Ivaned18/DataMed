@@ -92,13 +92,13 @@ li > #dropdown-main{
 	  box-shadow: 0 10px 0 #fff;
 	  margin-bottom: 16px;
 	}
-	.menu-btn:focus:before {
+	/*.menu-btn:focus:before {
 	  box-shadow: 0 0 0 #fff;
 	  transform: translateY(10px) rotate(45deg);
 	}
-	.menu-btn:focus:after{
+	/*.menu-btn:focus:after{
 	  transform: translateY(-10px) rotate(-45deg);
-	}
+	}*/
 }
 /*nav{
 	background-color: #0288d1;
@@ -175,32 +175,36 @@ header .intro-lead-in {
 /* === CONTENT === */
 #content{
 	padding-bottom: 30px;
-	text-align: center;
 	margin-top: 50px;
 }
-#emergency-register, #register-record, #register-patients{
+.registers{
 	background-color: #0288d1;
+	border: 2px solid #0288d1;
 	padding-top: 15px;
 	padding-bottom: 5px;
 	border-radius: 5px;
 	-webkit-transition-timing-function: ease;
 	transition-timing-function: ease;
 }
-/*#register-patients:hover{
+.registers:hover{
 	background-color: #fff;
-	border: 1px solid #0288d1;
-	padding-top: 15px;
-	padding-bottom: 5px;
+	border: 2px solid;
 	border-radius: 5px;
-	-webkit-transition: ease 1s;
-	transition: ease 1s;
-}*/
+}
+.registers:hover, .content-title:hover, .fa-reg:hover{
+	color: #0288d1;
+	border-color: #0288d1;
+	-webkit-transition: all .3s;
+	-moz-transition:all .3s;
+	transition: all .3s;
+}
+
 .content-title{
 	color: #fff;
 	font-size: 24px;
 	font-size: 2rem;
 }
-.fa-ambulance, .fa-medkit, .fa-users{
+.fa-reg{
 	color: #FFFFFF;
 	padding: 15px 15px 15px 15px;
 	border: 2px solid #fff;
