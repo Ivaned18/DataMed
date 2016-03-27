@@ -25,4 +25,7 @@ DataMed theme was created by **Christian D. Rodríguez**, **Wilkin Vásquez** an
 **Wilkin Vásquez**
 * https://github.com/wilkin4
 
+**Ivan J. Estevez**
+* https://github.com/Ivaned18
+
 ### Any contribution is welcomed... :+1: :sparkling_heart:
